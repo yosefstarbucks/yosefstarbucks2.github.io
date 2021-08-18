@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #017143;
+}
+::selection {
+  background-color: var(--main-color);
+  color: white;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170%;
+  background: var(--main-color);
+  clip-path: circle(800px at right 900px);
+}
+/* Start Nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.nav .logo {
+  max-width: 80px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav ul li {
+  display: block;
+  margin-left: 40px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* End Nav */
+/* Start Landing */
+.landing {
+  min-height: 150vh;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 100px;
+  position: relative;
+}
+.landing .text {
+  margin-top: 160px;
+}
+.landing .text h1 {
+  color: #333;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: 500px;
+}
+.landing .text h1 span {
+  color: var(--main-color);
+  font-weight: 900;
+}
+.landing .text p {
+  color: #333;
+  max-width: 600px;
+  padding: 1rem 0;
+}
+.landing .text a {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  padding: 9px 22px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  margin-top: 15px;
+}
+.landing img {
+  max-width: 527px;
+  margin-top: 120px;
+}
+.landing .icons {
+  position: absolute;
+  right: -70px;
+  display: flex;
+  flex-direction: column;
+  top: 42%;
+  transform: translateY(-50%);
+}
+.landing .icons .fab {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.landing .images {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.landing .images img {
+  display: inline-block;
+  transition: 0.5s !important;
+  max-width: 66px;
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.landing .images img:hover {
+  transform: translateY(-20px);
+}
+/* End Landing */
